@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 var (
@@ -11,8 +10,6 @@ var (
 )
 
 func main() {
-	fmt.Printf("%v, %T \r\n", i, i)
-
-	k := strconv.Itoa(i)
-	fmt.Printf("%v, %T", k, k)
+	const myConst string = "my first constant"
+	fmt.Printf("%v, %T", myConst, myConst)
 }
