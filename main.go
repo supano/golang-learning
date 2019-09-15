@@ -5,11 +5,12 @@ import (
 )
 
 func main() {
-	a := [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	classRoom := make(map[string]int)
+	classRoom = map[string]int{
+		"1/1": 20,
+		"1/2": 22,
+		"1/3": 23,
+	}
 
-	b := a
-	b[0] = 5
-
-	fmt.Printf("a: %v \n", a)
-	fmt.Printf("b: %v \n", b)
+	fmt.Printf("%v \n", classRoom)
 }
