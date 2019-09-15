@@ -27,5 +27,16 @@ func main() {
 		},
 	}
 
-	fmt.Println(student1.favFood, student2.favFood)
+	if student1.name == "student1" && student2.name == "student2" {
+		fmt.Println(student1.favFood, student2.favFood)
+	}
+
+	switch student1.favFood[0] {
+	case "burger":
+		fmt.Println("he's like burger")
+	case "pizza":
+		fmt.Println("he's like pizza")
+	default:
+		fmt.Println("he's like nothing")
+	}
 }
