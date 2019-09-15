@@ -1,19 +1,31 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+type student struct {
+	name    string
+	id      int
+	favFood []string
+}
 
 func main() {
-	classRoom := make(map[string]int)
-	classRoom = map[string]int{
-		"1/1": 20,
-		"1/2": 22,
-		"1/3": 23,
+	student1 := student{
+		name: "student1",
+		id:   1,
+		favFood: []string{
+			"burger",
+			"pizza",
+		},
 	}
 
-	classRoom2 := classRoom
-	delete(classRoom2, "1/1")
+	student2 := student{
+		name: "student2",
+		id:   2,
+		favFood: []string{
+			"sushi",
+			"okonomiyagi",
+		},
+	}
 
-	fmt.Println(classRoom, classRoom2)
+	fmt.Println(student1.favFood, student2.favFood)
 }
