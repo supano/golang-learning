@@ -5,6 +5,10 @@ import (
 )
 
 func main() {
-	grades := [...]int{97, 85, 93}
-	fmt.Printf("%v", grades)
+	grades := []int{1, 2, 3}
+	a := grades[:]
+	b := grades[1:]
+
+	fmt.Printf("a: %v \n", a)
+	fmt.Printf("b: %v \n", b)
 }
