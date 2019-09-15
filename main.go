@@ -12,5 +12,6 @@ func main() {
 		"1/3": 23,
 	}
 
+	delete(classRoom, "1/1")
 	fmt.Printf("%v \n", classRoom)
 }
